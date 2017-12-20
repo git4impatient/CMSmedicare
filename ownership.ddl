@@ -35,7 +35,7 @@ payment_publication_date string
 row format delimited
 fields terminated by ','
 stored as textfile
-location '/user/marty/cms.db/ownership'
+location '/user/centos/cms.db/ownership'
 ;
 select * from ownership limit 3;
 
