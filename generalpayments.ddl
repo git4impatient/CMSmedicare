@@ -80,7 +80,7 @@ payment_publication_date string
 row format delimited
 fields terminated by ','
 stored as textfile
-location '/user/marty/cms.db/generalpayments'
+location '/user/centos/cms.db/generalpayments'
 ;
 
 
