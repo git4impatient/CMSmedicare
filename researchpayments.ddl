@@ -181,7 +181,7 @@ context_of_research string
 row format delimited
 fields terminated by ','
 stored as textfile
-location '/user/marty/cms.db/researchpayments'
+location '/user/centos/cms.db/researchpayments'
 ;
 select * from researchpayments limit 3;
 
