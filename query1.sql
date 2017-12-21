@@ -1,3 +1,6 @@
+--COMPUTE STATS ON ALL
+-- CREATE PARQUET VERSIONS OF ALL
+
 --select count(*) from (
 select g.physician_profile_id, 
 sum(g.total_amount_of_payment_usdollars) genpayments ,
