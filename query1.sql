@@ -2,6 +2,7 @@
 -- CREATE PARQUET VERSIONS OF ALL
 
 --select count(*) from (
+use cms;
 select g.physician_profile_id, 
 sum(g.total_amount_of_payment_usdollars) genpayments ,
 sum ( o.total_amount_invested_usdollars ) ownerinvest
