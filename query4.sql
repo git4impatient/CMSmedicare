@@ -1,4 +1,5 @@
- select g.physician_profile_id, 
+use cms;
+select g.physician_profile_id, 
 sum(g.total_amount_of_payment_usdollars) genpayments ,
 sum(r.total_amount_of_payment_usdollars )researchpayments,
 sum ( o.total_amount_invested_usdollars ) ownerinvest
