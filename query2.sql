@@ -1,3 +1,4 @@
+use cms;
 select g.physician_profile_id, 
 sum(g.total_amount_of_payment_usdollars) genpayments , count(*) 
 from generalpayments g 
