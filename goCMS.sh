@@ -1,5 +1,7 @@
 wget http://download.cms.gov/openpayments/PGYR16_P063017.ZIP
 jar -xvf  PGYR16_P063017.ZIP
+sudo -u hdfs hadoop fs -mkdir /user/$USER
+sudo -u hdfs hadoop fs -chown $USER:$USER /user/$USER  
 hadoop fs -rm -R /user/$USER/cms.db/ownership
 hadoop fs -rm -R /user/$USER/cms.db/generalpayments
 hadoop fs -rm -R /user/$USER/cms.db/researchpayments
