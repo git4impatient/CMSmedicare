@@ -1,5 +1,9 @@
-wget http://download.cms.gov/openpayments/PGYR16_P063017.ZIP
-jar -xvf  PGYR16_P063017.ZIP
+wget http://download.cms.gov/openpayments/PGYR16_P011718.ZIP
+# warning the cms.gov site changes the names of the files this was the old namePGYR16_P063017.ZIP
+
+
+jar -xvf  PGYR16_P011718.ZIP
+
 sudo -u hdfs hadoop fs -mkdir /user/$USER
 sudo -u hdfs hadoop fs -chown $USER:$USER /user/$USER  
 hadoop fs -rm -R /user/$USER/cms.db/ownership
