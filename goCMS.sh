@@ -13,9 +13,9 @@ hadoop fs -mkdir /user/$USER/cms.db
 hadoop fs -mkdir /user/$USER/cms.db/ownership
 hadoop fs -mkdir /user/$USER/cms.db/researchpayments
 hadoop fs -mkdir /user/$USER/cms.db/generalpayments
-hadoop fs -put  OP_DTL_OWNRSHP_PGYR2016_P06302017.csv /user/$USER/cms.db/ownership
-hadoop fs -put  OP_DTL_GNRL_PGYR2016_P06302017.csv  /user/$USER/cms.db/generalpayments
-hadoop fs -put  OP_DTL_RSRCH_PGYR2016_P06302017.csv /user/$USER/cms.db/researchpayments
+hadoop fs -put  *OWNRSHP_*.csv /user/$USER/cms.db/ownership
+hadoop fs -put  OP_DTL_GNRL_P*.csv  /user/$USER/cms.db/generalpayments
+hadoop fs -put  OP_DTL_RSRCH_P*.csv /user/$USER/cms.db/researchpayments
 export DATANODE=$(sudo su - hdfs -c "hdfs dfsadmin -report | grep Hostname | sed 's/.*: //'  | tail -1")
 impala-shell -i $DATANODE -f cmsdb.ddl
 impala-shell -i $DATANODE -f generalpayments.ddl 
