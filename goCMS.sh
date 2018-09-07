@@ -6,7 +6,7 @@
 wget http://download.cms.gov/openpayments/PGYR17_P062918.ZIP
 
 
-jar -xvf  PGYR16_P011718.ZIP
+jar -xvf  PGYR17_P062918.ZIP 
 
 sudo -u hdfs hadoop fs -mkdir /user/$USER
 sudo -u hdfs hadoop fs -chown $USER:$USER /user/$USER  
