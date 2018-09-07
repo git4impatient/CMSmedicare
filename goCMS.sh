@@ -1,5 +1,9 @@
-wget http://download.cms.gov/openpayments/PGYR16_P011718.ZIP
+# wget http://download.cms.gov/openpayments/PGYR16_P011718.ZIP
 # warning the cms.gov site changes the names of the files this was the old namePGYR16_P063017.ZIP
+# continued moving target  
+# get new link here:  https://openpaymentsdata.cms.gov/
+
+wget http://download.cms.gov/openpayments/PGYR17_P062918.ZIP
 
 
 jar -xvf  PGYR16_P011718.ZIP
