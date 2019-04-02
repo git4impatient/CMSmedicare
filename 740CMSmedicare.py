@@ -1,3 +1,10 @@
+#copyright 2019 Martin Lurie
+# sample code not supported
+# use pairplot and logistic regression to 
+# predict if a claim will be disputed
+
+
+
 from __future__ import print_function
 !echo $PYTHON_PATH
 import os, sys
